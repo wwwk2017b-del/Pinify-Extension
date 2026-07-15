@@ -1,0 +1,71 @@
+{
+  "manifest_version": 3,
+  "name": "Pinify — Pinterest HD Downloader",
+  "version": "1.1.0",
+  "description": "Instantly download high-resolution Pinterest images with a single click. Sleek, fast, and effortless.",
+  "permissions": [
+    "downloads",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.pinterest.com/*",
+    "https://*.pinterest.co.uk/*",
+    "https://*.pinterest.ca/*",
+    "https://*.pinterest.com.au/*",
+    "https://*.pinterest.de/*",
+    "https://*.pinterest.fr/*",
+    "https://*.pinterest.es/*",
+    "https://*.pinterest.it/*",
+    "https://*.pinterest.jp/*",
+    "https://*.pinterest.co.kr/*",
+    "https://*.pinterest.pt/*",
+    "https://*.pinterest.ru/*",
+    "https://*.pinterest.com.mx/*",
+    "https://*.pinterest.cl/*",
+    "https://*.pinterest.at/*",
+    "https://*.pinterest.ch/*",
+    "https://*.pinterest.nz/*",
+    "https://*.pinterest.ph/*",
+    "https://*.pinterest.dk/*",
+    "https://*.pinterest.ie/*",
+    "https://*.pinterest.se/*",
+    "https://*.pinterest.co.in/*",
+    "https://*.pinterest.com.br/*",
+    "https://i.pinimg.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.pinterest.com/*",
+        "https://*.pinterest.co.uk/*",
+        "https://*.pinterest.ca/*",
+        "https://*.pinterest.com.au/*",
+        "https://*.pinterest.de/*",
+        "https://*.pinterest.fr/*",
+        "https://*.pinterest.es/*",
+        "https://*.pinterest.it/*",
+        "https://*.pinterest.jp/*",
+        "https://*.pinterest.co.kr/*",
+        "https://*.pinterest.pt/*",
+        "https://*.pinterest.ru/*",
+        "https://*.pinterest.com.mx/*",
+        "https://*.pinterest.cl/*",
+        "https://*.pinterest.at/*",
+        "https://*.pinterest.ch/*",
+        "https://*.pinterest.nz/*",
+        "https://*.pinterest.ph/*",
+        "https://*.pinterest.dk/*",
+        "https://*.pinterest.ie/*",
+        "https://*.pinterest.se/*",
+        "https://*.pinterest.co.in/*",
+        "https://*.pinterest.com.br/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
