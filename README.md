@@ -26,7 +26,12 @@
 - 🔄 **Smart Fallback** — If the original resolution isn't available, automatically tries the next best quality.
 - ♿ **Accessible** — Keyboard shortcuts, ARIA labels, and `prefers-reduced-motion` support.
 
----
+---  screenshots 
+
+ <img width="1024" height="565" alt="image" src="https://github.com/user-attachments/assets/58b5fd7a-0510-448d-8e52-0444142af83d" />
+ <img width="552" height="321" alt="image" src="https://github.com/user-attachments/assets/3e787670-aad6-4cc5-876f-4fe0400453ae" />
+
+
 
 ## 📦 Installation
 
